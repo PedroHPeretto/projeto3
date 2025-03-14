@@ -13,43 +13,42 @@
 </head>
 
 <body>
-    
-        <header>
-            <div class="container d-flex justify-content-center p-4">
-                <img src="./content/Contacts.png" alt="Livro de contatos">
-                <h1> Agenda de contatos </h1>
-            </div>
-        </header>
-
-        <form id="form">
-            <div class="container d-flex justify-content-center">
-                <input class="form-control me-2 p-2" id="inputNome" type="text" placeholder="Digite o nome do contato:" required />
-                <input class="form-control me-2 p-2" id="inputTelefone" type="text" placeholder="Digite o número do contato" required />
-                <button class="btn btn-success fw-bold" type="submit"> Cadastrar </button>
-            </div>
-        </form>
-
-        <div class="container d-flex justify-content-center mt-5">
-            <table class="table table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th>
-                            <i class="bi bi-file-earmark-spreadsheet"></i>
-                            Nome
-                        </th>
-                        <th>
-                            <i class="bi bi-telephone"></i>
-                            Telefone
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                            
-                    </tr>
-                </tbody>
-        </table>
+    <header>
+        <div class="container d-flex justify-content-center p-4">
+            <img class="d-flex" src="./content/Contacts.png" alt="Livro de contatos">
+            <h1 class="d-flex align-items-center"> Agenda de contatos </h1>
         </div>
+    </header>
+
+    <form id="form">
+        <div class="container d-flex justify-content-center">
+            <input class="form-control me-2 p-2" id="inputNome" type="text" placeholder="Digite o nome do contato:" required />
+            <input class="form-control me-2 p-2" id="inputTelefone" type="text" placeholder="Digite o número do contato:" required />
+            <button class="btn btn-success fw-bold" type="submit"> Cadastrar </button>
+        </div>
+    </form>
+
+    <div class="container d-flex justify-content-center mt-5">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        <i class="bi bi-file-earmark-spreadsheet"></i>
+                        Nome
+                    </th>
+                    <th>
+                        <i class="bi bi-telephone"></i>
+                        Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                        
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <script src="./libs/bootstrap.bundle.min.js"></script>
     <script src="./libs/jquery-3.7.1.slim.min.js"></script>

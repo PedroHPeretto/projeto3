@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    width: 85vw;
+    width: 90vw;
 }
 
 /* header */
@@ -17,6 +17,7 @@ header {
 header img {
     height: 48px;
     margin-right: 12px;
+    align-items: center;
 }
 
 header h1 {
@@ -54,4 +55,59 @@ table th {
 
 table {
     background-color: whitesmoke !important;
+}
+
+@media (max-width: 991px) {
+
+    /* header */
+
+    header h1 {
+        font-size: 3.8rem;
+    }
+
+    header img {
+        height: 70px;
+    }
+
+    /* form */
+
+    #form input,
+    #form button  {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* header */
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    /* form */
+
+    #form .container {
+        flex-direction: column;
+    }
+
+    #form input,
+    #form button  {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    /* tabela */
+
+    .table th {
+        font-size: 1.3rem;
+    }
+
+    .table td {
+        font-size: 0.87rem !important;
+    }
 }
