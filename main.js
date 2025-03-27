@@ -3,6 +3,15 @@ $(document).ready(function() {
     /* validação telefone */
 
     $('#inputTelefone').mask('+00 (00) 00000-0000')
+
+    /* validação nome */
+
+    $('#inputNome').mask('Z', {
+        translation: {
+            'Z': { pattern: /[A-Za-zÀ-ÖØ-öø-ÿ ]/, recursive: true }
+        }
+    });
+    
     
     /* função adicionar contatos */
 
